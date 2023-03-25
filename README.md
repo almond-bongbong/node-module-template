@@ -63,6 +63,9 @@ export default {
 6. rollup-plugin-postcss: CSS 및 SCSS와 같은 스타일시트를 처리하고 모듈로 번들링합니다.
 
 extensions 배열은 Rollup이 처리해야 하는 파일 확장자를 나열합니다.
+
 export default는 Rollup에 대한 기본 설정을 내보냅니다. input은 번들의 시작점을 지정하고, output은 번들의 결과물을 저장할 경로와 포맷을 설정합니다. 이 설정에서는 CommonJS 및 ES 모듈 포맷을 사용하여 두 개의 번들을 생성합니다.
+
 plugins 배열은 위에서 설명한 플러그인들을 포함합니다. 이 플러그인들은 번들링 과정에서 코드를 변환하고 최적화하는 데 사용됩니다.
+
 이 설정은 라이브러리의 소스 코드를 효율적으로 번들링하고, 최신 JavaScript 및 TypeScript 문법을 지원하며, 스타일시트와 모듈 처리를 포함하는 등 다양한 요구 사항을 충족합니다.
