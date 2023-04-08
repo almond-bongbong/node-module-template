@@ -1,12 +1,12 @@
-import React from 'react';
-import MyComponent from 'node-module-template';
-import './App.css';
+import { useState } from 'react';
+import Component from 'module-template';
 
 function App() {
+  const [count, setCount] = useState(0);
+
   return (
-    <div className="app">
-      hello
-      <MyComponent />
+    <div className="App">
+      <Component />
     </div>
   );
 }

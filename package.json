@@ -10,7 +10,7 @@
   "scripts": {
     "build": "rollup -c",
     "build:watch": "rollup -c -w",
-    "dev": "npm run build && cd ./example && npm run start"
+    "dev": "npm run build:watch"
   },
   "peerDependencies": {
     "react": ">=16.8.0",
