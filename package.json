@@ -1,7 +1,7 @@
 {
   "name": "module-template",
-  "version": "1.0.0",
-  "description": "Template for node modules",
+  "version": "1.0.1",
+  "description": "A feature-rich boilerplate for creating React and TypeScript node modules, complete with Rollup bundling, Jest testing environment, and ESLint & Prettier integration.",
   "author": "",
   "license": "MIT",
   "main": "./lib/index.js",
