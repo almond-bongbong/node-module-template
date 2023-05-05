@@ -1,6 +1,6 @@
 {
   "name": "module-template",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A feature-rich boilerplate for creating React and TypeScript node modules, complete with Rollup bundling, Jest testing environment, and ESLint & Prettier integration.",
   "author": "",
   "license": "MIT",
