@@ -2,8 +2,6 @@
 
 This is a boilerplate template for creating node modules with React, TypeScript, and Rollup.
 
-**Note: 🚀 This template supports React 17 and above, utilizing the new JSX Transform feature.**
-
 The template includes a testing environment using Jest and React Testing Library.
 
 ## 🌟 Features
