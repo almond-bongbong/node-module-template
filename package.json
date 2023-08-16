@@ -4,9 +4,10 @@
   "description": "A feature-rich boilerplate for creating React and TypeScript node modules, complete with Rollup bundling, Jest testing environment, and ESLint & Prettier integration.",
   "author": "",
   "license": "MIT",
-  "main": "./lib/index.js",
-  "module": "./lib/index.esm.js",
+  "main": "./lib/index.cjs",
+  "module": "./lib/index.mjs",
   "types": "./lib/index.d.ts",
+  "type": "commonjs",
   "scripts": {
     "test": "jest",
     "test:watch": "jest --watch",
