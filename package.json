@@ -29,6 +29,7 @@
     "@rollup/plugin-commonjs": "^24.0.1",
     "@rollup/plugin-eslint": "^9.0.3",
     "@rollup/plugin-node-resolve": "^15.0.1",
+    "@rollup/plugin-terser": "^0.4.3",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^12.1.2",
     "@types/jest": "^23.1.5",
