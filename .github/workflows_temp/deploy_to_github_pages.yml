@@ -18,13 +18,13 @@ jobs:
           node-version: 16
 
       - name: Install dependencies
-        run: yarn install
+        run: npm install
 
       - name: Build project
-        run: yarn build
+        run: npm run build
 
       - name: Build example
-        run: cd example && yarn install && yarn build
+        run: cd example && npm install && npm run build
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3

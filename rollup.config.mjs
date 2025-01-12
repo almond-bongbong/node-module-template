@@ -7,7 +7,15 @@ import babel from '@rollup/plugin-babel';
 import eslint from '@rollup/plugin-eslint';
 import terser from '@rollup/plugin-terser';
 
-import packageJson from './package.json' assert { type: 'json' };
+import fs from 'node:fs';
+import { dirname, join } from 'node:path';
+import { fileURLToPath } from 'node:url';
+
+const configPath = join(
+  dirname(fileURLToPath(import.meta.url)),
+  './package.json',
+);
+const packageJson = JSON.parse(fs.readFileSync(configPath, 'utf8'));
 
 const extensions = ['js', 'jsx', 'ts', 'tsx', 'mjs'];
 
