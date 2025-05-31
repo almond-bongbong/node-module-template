@@ -1,6 +1,6 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
-import Component from '../src';
+import { Component } from '../src';
 
 describe('test', () => {
   it('correct', () => {
@@ -13,8 +13,10 @@ describe('test', () => {
     screen.getByText('hello3');
   });
 
-  // it('wrong', () => {
-  //   render(<div>hello</div>);
-  //   screen.getByText('hello2');
-  // });
+  it('wrong', () => {
+    render(<div>hello</div>);
+    const hello = screen.queryByText('hello2');
+
+    expect(hello).toBeNull();
+  });
 });

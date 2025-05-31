@@ -1,8 +1,10 @@
 import styles from './index.module.scss';
 import { sum } from './utils/sum';
 
-function Component() {
-  return <div className={styles.compo}>hello{sum(1, 2)}</div>;
+export interface Props {
+  className?: string;
 }
 
-export default Component;
+export function Component({ className }: Props) {
+  return <div className={`${styles.compo} ${className}`}>hello{sum(1, 2)}</div>;
+}
