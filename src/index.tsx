@@ -1,4 +1,4 @@
-import styles from './index.module.scss';
+import './index.css';
 import { sum } from './utils/sum';
 
 export interface Props {
@@ -6,5 +6,5 @@ export interface Props {
 }
 
 export function Component({ className }: Props) {
-  return <div className={`${styles.compo} ${className}`}>hello{sum(1, 2)}</div>;
+  return <div className={`compo ${className || ''}`}>hello{sum(1, 2)}</div>;
 }

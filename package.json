@@ -5,15 +5,26 @@
   "author": "almond-bongbong",
   "license": "MIT",
   "types": "./lib/types/index.d.ts",
-  "main": "./lib/index.js",
+  "main": "./lib/cjs/index.js",
+  "module": "./lib/esm/index.js",
   "type": "module",
   "files": [
     "lib/**/*"
   ],
+  "exports": {
+    ".": {
+      "types": "./lib/types/index.d.ts",
+      "import": "./lib/esm/index.js",
+      "require": "./lib/cjs/index.js"
+    }
+  },
   "scripts": {
     "clean": "del-cli ./lib",
     "lint": "eslint src",
-    "build": "npm run clean && npm run lint && tsc -p ./tsconfig.json",
+    "copy:css": "cp src/index.css lib/esm/ && cp src/index.css lib/cjs/",
+    "build:esm": "tsc -p ./tsconfig.json",
+    "build:cjs": "tsc -p ./tsconfig.cjs.json",
+    "build": "npm run clean && npm run lint && npm run build:esm && npm run build:cjs && npm run copy:css",
     "prepack": "npm run build",
     "test": "jest",
     "test:watch": "jest --watch"
