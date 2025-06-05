@@ -1,6 +1,6 @@
 # 🛠️ Module Template
 
-A boilerplate template for creating Node modules with React and TypeScript.
+A feature-rich boilerplate for creating React and TypeScript node modules, complete with Rollup bundling, Jest testing environment, and ESLint & Prettier integration.
 
 ## 🌟 Features
 
@@ -105,6 +105,38 @@ When publishing to npm, only the following files are included:
 1. Update the version in `package.json`
 2. Run `npm run build` to compile the latest changes
 3. Run `npm publish` to publish to npm registry
+
+## 📋 How to Use This Template
+
+This repository is a template repository. Follow these steps to create a new React TypeScript module:
+
+1. **Click "Use this template"** - Create a new repository on GitHub
+2. **Enter repository details** - Name, description, and visibility settings
+3. **Clone and customize** - Clone your new repository and modify the following files:
+
+### 🔧 Files to Modify
+
+**`package.json`**
+
+```json
+{
+  "name": "your-module-name", // ← Change this
+  "version": "1.0.0", // ← Reset to initial version
+  "description": "Your module description", // ← Change this
+  "author": "your-name" // ← Change this
+  // ... keep the rest as is
+}
+```
+
+**`README.md`**
+
+- Change the title to your module name
+- Update the description to match your module's functionality
+- Add usage examples and API documentation
+
+**`src/index.ts`**
+
+- Write your actual module code
 
 ## 🚀 Usage
 
